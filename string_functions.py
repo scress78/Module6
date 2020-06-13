@@ -7,5 +7,9 @@ Function parameter assignment
 """
 
 
-def multiply_string(message,n):
+def multiply_string(message, n):
+    return message*n
 
+
+if __name__ == '__main__':
+    print(multiply_string("Spencer", 3))
