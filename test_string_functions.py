@@ -1,3 +1,11 @@
+"""
+Program: test_string_functions.py
+Author: Spencer Cress
+Date: 6/13
+
+Test the function for parameter and return assignment
+"""
+
 import unittest
 from Module6.more_functions.string_functions import multiply_string
 
