@@ -17,7 +17,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_test_score_non_numeric(self):
         self.assertEqual(score_input("A true test of life..", "...You're still getting there, that's ok"), "this isn't a number, please enter one")
-        
+
+    def test_score_input_invalid_message(self):
+        self.assertEqual(score_input("Banana Test", 120, "Anything but a banana makes no sense. Stop it."), "Anything but a banana makes no sense. Stop it.")
 
 
 if __name__ == '__main__':
