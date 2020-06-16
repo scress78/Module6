@@ -17,6 +17,8 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     #test_name = input("Input name of test: ")
     #test_score = input("input score test: ")
     valid_input = test_name+": "+str(test_score)
+    if test_score < 0:
+        valid_input = invalid_message
     return valid_input
 
 
