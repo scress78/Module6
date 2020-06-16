@@ -14,6 +14,12 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     :param invalid_message: Validates test score
     :return: Returns test name and score
     """
-    pass
+    #test_name = input("Input name of test: ")
+    #test_score = input("input score test: ")
+    return test_name+": "+str(test_score)
+
+
+if __name__ == '__main__':
+    score_input("Math Test", 100)
 
 
