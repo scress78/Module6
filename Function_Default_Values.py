@@ -19,6 +19,8 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     valid_input = test_name+": "+str(test_score)
     if test_score < 0:
         valid_input = invalid_message
+    if test_score > 100:
+        valid_input = invalid_message
     return valid_input
 
 

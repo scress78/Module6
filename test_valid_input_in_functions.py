@@ -12,8 +12,8 @@ class MyTestCase(unittest.TestCase):
     def test_score_input_test_score_below_range(self):
         self.assertEqual(score_input("Science Test", -10), "Invalid test score, try again!")
 
-    #def test_score_input_test_score_above_range(self):
-        #self.assertEqual(score_input("Physics Test", 212), "Invalid test score, try again!")
+    def test_score_input_test_score_above_range(self):
+        self.assertEqual(score_input("Physics Test", 212), "Invalid test score, try again!")
 
     #def test_test_score_non_numeric(self):
         #self.assertRaises(score_input("A true test of life..", "...You're still getting there, that's ok"), ValueError)
