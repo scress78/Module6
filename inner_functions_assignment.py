@@ -9,15 +9,15 @@ Inner Functions assignment
 
 def measurements(a_list):
     def area(b_list):
-        #if len(a_list) == 1:
-        #    area_x = a_list[0] ** 2
+        if len(a_list) == 1:
+            area_x = a_list[0] ** 2
         if len(a_list) == 2:
             area_x = a_list[0] * a_list[1]
         return area_x
 
     def perimeter(c_list):
-        #if len(a_list) == 1:
-        #    perimeter_x = a_list[0] * 4
+        if len(a_list) == 1:
+            perimeter_x = a_list[0] * 4
         if len(a_list) == 2:
             perimeter_x = a_list[0] * 2 + a_list[1] * 2
         return perimeter_x
